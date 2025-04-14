@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: roboto;
+}
+
+.form-container {
+  max-width: 375px;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-mob {
+  width: 100%;
+  margin: 0;
+}
+
+.brief-details {
+  margin-left: 20px;
+  /* max-width: 300px; */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 20px;
+}
+
+.list-section {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 0;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.list-text {
+  margin: 0;
+  line-height: 1.8rem;
+}
+
+.email-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 0.5rem; */
+}
+
+.error-message {
+  font-size: 0.8rem;
+  color: hsl(4, 100%, 67%);
+  font-weight: 700;
+  display: none;
+}
+
+input {
+  padding: 15px;
+  width: calc(100% - 30px);
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 58%);
+  margin-top: 8px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+input.error {
+  border-color: hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+  background-color: hsl(2, 72%, 86%);
+}
+
+.sub-button {
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  padding: 15px 25px;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.success-page {
+  display: none;
+  padding: 90px 25px;
+}
+
+.success-page button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 40%;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.desktop-image {
+  display: none;
+}
+
+@media (width > 768px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 35px;
+  }
+
+  .desktop-image {
+    display: block;
+    width: 300px;
+    height: auto;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .brief-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sub-button:hover {
+    background-color: hsl(4, 100%, 67%);
+  }
+
+  .success-page {
+    background-color: white;
+    max-width: 340px;
+    padding: 2rem;
+    border-radius: 13px;
+  }
+
+  .success-page button {
+    margin-top: 20px;
+  }
+}
