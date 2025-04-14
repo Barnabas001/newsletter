@@ -70,7 +70,7 @@ input {
   margin-top: 8px;
   margin-bottom: 16px;
   cursor: pointer;
-  justify-self: center;
+  
 }
 
 input.error {
@@ -90,7 +90,6 @@ input.error {
   margin-top: 20px;
   font-weight: bold;
   cursor: pointer;
-  justify-self: center;
 }
 
 .success-page {
